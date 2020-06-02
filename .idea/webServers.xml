@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2ba84b1c-9c7c-43c6-ac97-02e5c24afa6c" name="小倩" url="http://134.175.197.76">
+        <fileTransfer host="134.175.197.76" port="3722" privateKey="E:\ssh\yao" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="3722" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
