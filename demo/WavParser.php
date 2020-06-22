@@ -11,8 +11,6 @@ class WavParser {
 
     protected $file_handler;
 
-    protected $header_content;
-
     public function __construct($file)
     {
         //var_dump(filesize($file));
@@ -50,17 +48,6 @@ class WavParser {
         $header['Subchunk2Size'] = $this->str2dec(substr($content, 40, 4), true);
 
         $this->header = $header;
-    }
-
-
-    protected function bin2str(string $bin_str)
-    {
-        $str = '';
-        $arr = str_split($bin_str, 8);
-        foreach ($arr as $byte) {
-            $str .= chr(bindec($byte));
-        }
-        return $str;
     }
 
 
